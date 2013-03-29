@@ -1,0 +1,13 @@
+# you'll need to change the application setting to match
+# your app's ID
+
+application: gae-campus-authn
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: authn.app
+  login: required
